@@ -15,8 +15,10 @@
 <body>
     <p>Navigation</p>
 
-    {{>messages}}
+    
     <main class="container">
+        {{>messages}}
+        {{>errors}}
         {{{ body }}}
     </main>
     

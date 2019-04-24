@@ -1,1 +1,31 @@
-<h1>Salir</h1>
+
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                Registrarse
+            </div>
+            <div class="card-body">
+                <form action="/users/signup" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Ingresar Nombre" value="{{name}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Ingresar Email"  value="{{email}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Ingresar clave"  value="{{password}}">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="confirm_password" placeholder="confirmar clave" value="{{confirm_password}}">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Registrarse
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
